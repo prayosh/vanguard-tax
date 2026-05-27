@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Vanguard Tax & Associates</title>
+    <!-- Premium Google Typography Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./assets/vanguard_logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- Statutory Regulatory Top Banner -->
+    <div class="statutory-header-banner" id="bannerTop">
+      <div class="container">
+        <span class="tracker-pulse"></span>
+        <span class="text-mono">ICAI Regulatory Compliance Portal • Peer Reviewed Chartered Accountant Firm</span>
+      </div>
+    </div>
+
+    <!-- Sticky Navigation & Premium Brand Header -->
+    <header id="siteHeader">
+      <div class="container header-container">
+        <!-- Logo Emblem & Text -->
+        <a href="/" class="logo-block" id="logoLink">
+          <img src="./assets/vanguard_logo.png" alt="Vanguard Logo" class="logo-graphic-img" id="logoGraphic" referrerPolicy="no-referrer">
+          <div class="logo-text">
+            <span class="logo-title">VANGUARD</span>
+            <span class="logo-subtitle">TAX & ASSOCIATES</span>
+          </div>
+        </a>
+
+        <!-- Mobile Navigation Hamburger -->
+        <button class="menu-toggle" id="menuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Desktop Navigation Menu -->
+        <nav id="navMenu">
+          <a href="/" class="nav-link" id="navLinkHome">Home</a>
+          <a href="./services" class="nav-link" id="navLinkServices">Services</a>
+          <a href="./about" class="nav-link" id="navLinkAbout">About the Firm</a>
+          <a href="./contact" class="nav-link active-nav" id="navLinkContact">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Workspace Area -->
+    <main id="mainWorkspace">
+
+      <!-- ============================================== -->
+      <!-- PAGE 4: CONTACT US & LOCATION HUB VIEW        -->
+      <!-- ============================================== -->
+      <section id="contact" class="page-section">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="section-head-card" id="contactHeader">
+            <span class="section-tag">COMMUNICATION INTEL</span>
+            <h1 class="section-head-title">Initiate Compliance Onboarding</h1>
+            <p class="section-head-desc">
+              Connect with our New Delhi secretariat. Secure a structural review of your company's taxation filing protocols 
+              under senior counsel guidance.
+            </p>
+          </div>
+
+          <div class="contact-layout" id="contactBodyLayout">
+            <!-- Left Panel: Desk Support and Address Details -->
+            <div class="contact-info-block" id="contactInfo">
+              <!-- Tel Block -->
+              <div class="contact-box" id="boxComm">
+                <h3 class="contact-box-title">Office Communication desk</h3>
+                <div class="contact-detail-row">
+                  <a href="tel:+911140554120" class="contact-number">+91 11 4055 XXXX</a>
+                  <a href="mailto:info@vanguardca.in" class="contact-email">info@vanguardca.in</a>
+                  <div style="margin-top: 1rem; border-top: 1px solid var(--color-border-subtle); padding-top: 1rem;">
+                    <span class="contact-hours"><strong>Official Hours:</strong> Monday to Saturday: 09:30 AM to 06:30 PM (Sundays and National Holidays Closed)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Address Block -->
+              <div class="contact-box" id="boxAddress">
+                <h3 class="contact-box-title">Official Physical Address</h3>
+                <p class="address-text" id="cpAddressText">
+                  Vanguard Tax & Associates,<br />
+                  Office No. 412 & 414, 4th Floor,<br />
+                  Statesman House, Barakhamba Road,<br />
+                  Connaught Place, New Delhi, 110001.
+                </p>
+                <div style="border-top: 1px solid var(--color-border-subtle); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                  <button class="btn btn-secondary w-full" id="openMapsBtn">
+                    Open Google Maps Navigation Workspace
+                  </button>
+                  <span style="font-size: 0.75rem; color: var(--color-neutral-muted); text-align: center;">Locate Statesman House on the Connaught Place radial hub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Panel: Professional Intake Form -->
+            <div class="form-card" id="formCard">
+              <div class="form-header">
+                <h2 class="form-header-title">Consultation Intake Form</h2>
+                <p style="font-size: 0.8rem; color: var(--color-neutral-muted); margin-top: 0.25rem;">Provide verified enterprise parameters to validate the professional inquiry.</p>
+              </div>
+              <div class="form-body">
+                <!-- SUCCESS ALERT CARD (Hidden standard display) -->
+                <div class="submit-success-panel" id="formSuccessPanel"></div>
+
+                <form id="consultationForm">
+                  <div class="form-grid">
+                    <!-- Field 1: Entity name -->
+                    <div class="form-group form-group-full">
+                      <label for="inpEntity" class="form-label">Corporate Entity Name</label>
+                      <input type="text" id="inpEntity" class="form-input" required placeholder="e.g. Acme Industries Private Limited" />
+                    </div>
+
+                    <!-- Field 2: Director name -->
+                    <div class="form-group">
+                      <label for="inpDirector" class="form-label">Authorized Director Name</label>
+                      <input type="text" id="inpDirector" class="form-input" required placeholder="e.g. Devendra Kumar" />
+                    </div>
+
+                    <!-- Field 3: PAN / GSTIN -->
+                    <div class="form-group">
+                      <label for="inpPanGst" class="form-label">PAN / GSTIN <span class="field-optional">[Optional Field]</span></label>
+                      <input type="text" id="inpPanGst" class="form-input" placeholder="e.g. AAACA1234A / 07AAACA1234A1ZH" />
+                    </div>
+
+                    <!-- Field 4: Official Email Address -->
+                    <div class="form-group">
+                      <label for="inpEmail" class="form-label">Official Email Address</label>
+                      <input type="email" id="inpEmail" class="form-input" required placeholder="corp@domain.in" />
+                    </div>
+
+                    <!-- Field 5: Contact Number -->
+                    <div class="form-group">
+                      <label for="inpPhone" class="form-label">Direct Contact Number</label>
+                      <input type="tel" id="inpPhone" class="form-input" required placeholder="+91 98100 XXXXX" />
+                    </div>
+
+                    <!-- Field 6: Nature Dropdown -->
+                    <div class="form-group form-group-full">
+                      <label for="inpInquiry" class="form-label">Nature of Professional Inquiry</label>
+                      <select id="inpInquiry" class="form-input" required style="appearance: auto;">
+                        <option value="" disabled selected>Select filing division context...</option>
+                        <option value="Statutory Audit">Statutory Audit (under Companies Act 2013)</option>
+                        <option value="GST Litigation">GST Litigation & Departmental Audit Scrutiny</option>
+                        <option value="Corporate Direct Tax">Corporate Direct Tax Planning & Filings u/s 44AB</option>
+                        <option value="Company Incorporation">Company Incorporation & Startup Regulatory Setup</option>
+                        <option value="NRI Taxation">NRI Taxation & Foreign Remittance u/s 195 / DTAA</option>
+                        <option value="Others">Others (Arbitration, Transfer Pricing, FEMA Compliance)</option>
+                      </select>
+                    </div>
+
+                    <!-- Field 7: Description text -->
+                    <div class="form-group form-group-full">
+                      <label for="inpDesc" class="form-label">Brief Description of the Case / Requirements</label>
+                      <textarea id="inpDesc" class="form-input" required placeholder="Please outline the specific corporate compliance requirements, assessment years, or statutory dispute notices concerned..."></textarea>
+                    </div>
+
+                    <!-- Button Submit -->
+                    <div class="form-group form-group-full" style="margin-top: 1rem;">
+                      <button type="submit" class="btn btn-primary w-full" id="btnSubmitForm">
+                        Authorize Submission of Consultation Request
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================== -->
+    <!-- PRESTIGIOUS FOOTER SYSTEM                      -->
+    <!-- ============================================== -->
+    <footer id="siteFooter">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Foot Column 1: Brand Info -->
+          <div class="footer-brand" id="footBrand">
+            <h3>VANGUARD TAX & ASSOCIATES</h3>
+            <p style="margin-top: 1rem; max-width: 400px;">
+              Peer-reviewed firm of Chartered Accountants in New Delhi. Dedicated to upholding the highest statutory standards 
+              of direct taxation planning, external auditing, corporate litigation representation, and advisory services.
+            </p>
+          </div>
+
+          <!-- Foot Column 2: Navigation Links -->
+          <div class="footer-column" id="footLinks">
+            <h4>Quick Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="/" class="footer-link">Home Portal</a></li>
+              <li><a href="./services" class="footer-link">Detailed Services Manual</a></li>
+              <li><a href="./about" class="footer-link">Firm Pedigree & Partners</a></li>
+              <li><a href="./contact" class="footer-link">Initiate Consultation</a></li>
+            </ul>
+          </div>
+
+          <!-- Foot Column 3: Regional Hub info -->
+          <div class="footer-column" id="footPresence">
+            <h4>District Presence</h4>
+            <p style="font-size: 0.82rem; line-height: 1.6; color: #94a3b8;">
+              Statesman House, Connaught Place, New Delhi, 110001.<br />
+              Tel: +91 11 4055 XXXX <br />
+              Email: info@vanguardca.in
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright" id="footCopyright">
+            &copy; 2026 Vanguard Tax & Associates. All Statutory Rights Reserved. Certified Peer-Reviewed Unit.
+          </div>
+          <div class="footer-icai" id="footDisclaimerNotice">
+            Formally governed under ICAI Code of Ethics (Acts 1949). Ref: CP-DEL/2026.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla Script Execution Link -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
